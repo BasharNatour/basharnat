@@ -12,7 +12,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:url("bg.jpeg");
+	background:url("/bg.jpeg");
 	background-size: cover;
 	flex-direction: column;
 }
