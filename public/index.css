@@ -12,7 +12,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:url("/bg.jpeg");
 	background-size: cover;
 	flex-direction: column;
 }
@@ -22,28 +21,44 @@ h1 {
 	font-size: 500%;
 	font-weight: bold;
 	text-align: center;
-	color: #0A2033;
+	color: #fff;
 }
-div{
-	font-size: 20px;
-	background:#DC143C;
-	text-align: center;
-	padding:7px 20px;
-	border-radius: 25px;
-	box-shadow: 0 0px 10px 	#FAFAD2;
-	cursor: pointer;
 
 
+.pg {
+	background:url("/bg.jpeg");
 }
-div:hover {
-	background: #00CED1;
-	padding: 7px 15px;
 
+.pg2{
+	background: url('/pg2.jpg');
 }
-/* nbjhjhjh */
+.pg3{
+	background: url('/pg3.jpg');
+}
 
-
-
+.back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+.back div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+}
+.back:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+z-index:  10;
+}
 
 
 
